@@ -1,3 +1,4 @@
+// Package gin implements a HTTP web framework.
 /*
 Package gin implements a HTTP web framework called gin.
 
