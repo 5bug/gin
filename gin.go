@@ -652,7 +652,7 @@ func (engine *Engine) handleHTTPRequest(c *Context) {
 		unescape = engine.UnescapePathValues
 	}
 
-	if engine.RemoveExtraSlash {
+	if engine.RemoveExtraSlash && engine.RedirectTrailingSlash {
 		rPath = cleanPath(rPath)
 	}
 
